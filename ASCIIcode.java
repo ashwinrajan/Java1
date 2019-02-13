@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class ASCIIcode 
+{
+	public static void main(String[] args) 
+	{
+		int ascii;
+		char character;
+
+		System.out.println("Enter a Integer between 0 and 128");
+		
+		Scanner input;
+		input = new Scanner(System.in);
+
+		ascii = input.nextInt();
+
+		character = (char)ascii;
+
+		System.out.println("Character for the given ASCII code is "+character);
+
+
+	}
+}

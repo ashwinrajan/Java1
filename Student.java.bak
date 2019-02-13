@@ -1,0 +1,45 @@
+public class Student 
+{
+	private String name;
+	private double gpa;
+	private String program;
+	private int studentId;
+	private long phoneNum;
+
+
+	public Student (String a, double b, String c, int d, long e)
+	{
+		name=a;
+		gpa=b;
+		program=c;
+		studentId=d;
+		phoneNum=e;
+
+	}
+	public String getName()
+	{
+		return name;
+	}
+	public double getGPA()
+	{
+		return gpa;
+	}
+	public String getProgram()
+	{
+		return program;
+	}
+	public int getStudentId()
+	{
+		return studentId;
+	}
+	public long getPhonenum()
+	{
+		return phoneNum;
+	}
+	public void setPhonenum(int x)
+	{
+		phoneNum = x;
+	}
+
+
+}

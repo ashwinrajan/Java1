@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+class BankInterest
+{
+	public static void main(String[] args) 
+	{
+		int years;
+		double interestRate;
+		
+		System.out.println("Enter Years");
+		Scanner in;
+		in = new Scanner(System.in);
+		
+		years=in.nextInt();
+
+		if (years>5)
+		{
+			interestRate=7.5;
+			System.out.println("interest rate ="+interestRate+"%");
+
+		
+		}
+		else
+		{
+			interestRate=4.5;
+			System.out.println("interest rate ="+interestRate+"%");
+		}
+		
+	}
+}

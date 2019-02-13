@@ -1,0 +1,51 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+class CalculateChangeDialogBox
+{
+	public static void main(String[] args) 
+	{
+		// Declaring Variables
+		double amount;
+		int toonies;
+		int loonies;
+		int quarters;
+		int dimes;
+		int nickels;
+		int pennies;
+		
+		// Input
+		String input = JOptionPane.showInputDialog(null,"Enter an amount of money:","Change Calculator"
+													,JOptionPane. QUESTION_MESSAGE);
+		
+		// Processing and Calculation
+		amount = Double.parseDouble(input);
+
+		toonies = (int) (amount/2.0) ;
+		amount = amount-(toonies * 2.0);
+
+		loonies =(int) (amount/1) ;
+		amount = amount-loonies;
+
+		quarters =(int) (amount/0.25);
+		amount = amount-(quarters * 0.25);
+
+		dimes =(int) (amount/0.10);
+		amount = amount-(dimes * 0.10);
+		
+		nickels =(int) (amount/0.05);
+		amount = amount-(nickels * 0.05);
+
+		pennies =(int) (amount*100.01);
+		
+		// Output
+		String output = "$"+input+" consists of:\n"+
+				toonies+" $2 coins \n"+
+				loonies+" $1 coins \n"+
+				quarters+" quarters \n"+
+				dimes+" dimes \n"+
+				nickels+" nickels \n"+
+				pennies+" pennies \n";
+				JOptionPane.showMessageDialog(null,output);
+	}
+}

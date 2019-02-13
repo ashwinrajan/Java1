@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class SmallestNumber
+{
+	public static void main(String[] args) 
+	{
+		
+		Scanner in;
+		in = new Scanner(System.in);
+
+		int num1;
+		int num2;
+		int smallnum;
+
+		System.out.println("Enter first number");
+		
+		num1= in.nextInt();
+		
+		System.out.println("Enter second number");
+
+		num2= in.nextInt();
+
+		
+		smallnum=num1<num2?num1:num2;
+
+		System.out.println("smallest number is "+smallnum);
+		
+	}
+}

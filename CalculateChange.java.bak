@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+class CalculateChange
+{
+	public static void main(String[] args) 
+	{
+		double amount;
+		int toonies;
+		int loonies;
+		int quarters;
+		int dimes;
+		int nickels;
+		int pennies;
+
+		System.out.println("Enter an amount of money:");
+		Scanner in;
+		in = new Scanner(System.in);
+		amount=in.nextDouble();
+
+		
+		toonies = (int) (amount/2.0) ;
+		amount -= toonies * 2.0;
+
+		loonies =(int) (amount/1) ;
+		amount -= loonies;
+
+		quarters =(int) (amount/0.25);
+		amount -= quarters * 0.25;
+
+		dimes =(int) (amount/0.10);
+		amount -= dimes * 0.10;
+		
+		nickels =(int) (amount/0.05);
+		amount -= nickels * 0.05;
+
+		pennies =(int) (amount*100.01);
+		
+
+		System.out.println("Your amount consists of:");
+		System.out.println(toonies+" $2 coins");
+		System.out.println(loonies+" $1 coins");
+		System.out.println(quarters+" quarters");
+		System.out.println(dimes+" dimes");
+		System.out.println(nickels+" nickels");
+		System.out.println(pennies+" pennies");
+	}
+}
